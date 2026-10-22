@@ -6,12 +6,13 @@ Protótipo navegável para validar a organização das áreas da Organização S
 
 Abra `index.html` no navegador e vá em **Simular pregão**. O seletor no topo alterna os perfis no mesmo navegador:
 
-1. No perfil **Fornecedor**, digite o valor da proposta inicial e clique em **Enviar proposta de teste**.
-2. No perfil **Pregoeiro**, abra a disputa. O botão só fica disponível depois que a proposta for enviada; o cronômetro de 10 minutos começa privado.
-3. Volte ao perfil **Fornecedor**. Um campo verde **Digite seu lance (R$)** aparecerá; ajuste o valor para ficar abaixo do menor valor atual e clique em **Enviar meu lance**. No perfil **Pregoeiro**, também é possível inserir lances fictícios de outros participantes.
-4. No perfil **Operador especial**, acione o aviso de 2 minutos durante a disputa. A contagem fica visível aos demais perfis e, no protótipo, encerra a simulação ao chegar a zero.
+1. No perfil **Administrador**, abra **Regras do pregão**, ajuste duração, redução mínima, encerramento do cronômetro e disponibilidade do chat; salve antes de iniciar.
+2. No perfil **Fornecedor**, digite o valor da proposta inicial e clique em **Enviar proposta de teste**.
+3. No perfil **Pregoeiro**, abra a disputa. O botão só fica disponível depois que a proposta for enviada; o cronômetro inicia privado com a duração configurada.
+4. Volte ao perfil **Fornecedor**. Um campo verde **Digite seu lance (R$)** aparecerá; ajuste o valor para respeitar a redução mínima e clique em **Enviar meu lance**. No perfil **Pregoeiro**, também é possível inserir lances fictícios de outros participantes.
+5. No perfil **Operador especial**, acione o aviso de 2 minutos durante a disputa. A contagem fica visível aos demais perfis; ao zerar, segue a regra definida pelo administrador.
 
-As ações são mantidas somente na memória desta aba; atualizar a página reinicia a simulação. O seletor de perfil é um recurso de teste, não é autenticação nem controle de acesso.
+As regras e ações são mantidas somente na memória desta aba; atualizar a página reinicia a simulação. As regras ficam bloqueadas quando a disputa começa. O seletor de perfil é um recurso de teste, não é autenticação nem controle de acesso.
 
 ## Regra especial do cronômetro
 
