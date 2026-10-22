@@ -4,7 +4,14 @@ Protótipo navegável para validar a organização das áreas da Organização S
 
 ## Como testar
 
-Abra `index.html` no navegador. O seletor no topo simula os perfis para facilitar a revisão das telas. No perfil **Operador especial**, aparece o comando de aviso de 2 minutos; ao acioná-lo, a contagem simulada é exibida para os demais perfis.
+Abra `index.html` no navegador e vá em **Simular pregão**. O seletor no topo alterna os perfis no mesmo navegador:
+
+1. No perfil **Fornecedor**, envie uma proposta fictícia.
+2. No perfil **Pregoeiro**, abra a disputa. O cronômetro de 10 minutos começa privado.
+3. Volte ao perfil **Fornecedor** e envie um lance menor que o menor valor atual. No perfil **Pregoeiro**, também é possível inserir lances fictícios de outros participantes.
+4. No perfil **Operador especial**, acione o aviso de 2 minutos durante a disputa. A contagem fica visível aos demais perfis e, no protótipo, encerra a simulação ao chegar a zero.
+
+As ações são mantidas somente na memória desta aba; atualizar a página reinicia a simulação. O seletor de perfil é um recurso de teste, não é autenticação nem controle de acesso.
 
 ## Regra especial do cronômetro
 
