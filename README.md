@@ -1,6 +1,6 @@
 # PregãoOS — primeira versão demonstrativa
 
-Protótipo navegável para validar a organização das áreas da Organização Social, do pregoeiro e dos fornecedores. Os dados exibidos são fictícios. Esta versão não deve ser usada para receber propostas reais nem para conduzir uma seleção oficial.
+Protótipo navegável para validar a organização das áreas da Organização Social Humanizar, do pregoeiro e dos fornecedores. A identidade exibida usa o nome, a logo, o CNPJ 04.541.853/0001-91 e o site humanizar.org.br fornecidos para esta validação. Os dados dos processos continuam fictícios. Esta versão não deve ser usada para receber propostas reais nem para conduzir uma seleção oficial.
 
 ## Como testar
 
