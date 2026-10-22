@@ -6,6 +6,9 @@ Protótipo navegável para validar a organização das áreas da Organização S
 
 Abra `index.html` no navegador e vá em **Simular pregão**. O seletor no topo alterna os perfis no mesmo navegador:
 
+- Em **Novo processo**, informe identificação, objeto, modalidade, critério, calendário e regras iniciais. O sistema verifica os campos obrigatórios, a ordem dos horários e números duplicados entre rascunhos locais.
+- Ao salvar, o processo aparece na lista como **Rascunho**. Esse cadastro é armazenado apenas no navegador atual (`localStorage`); não é enviado ao Neon nem publicado para fornecedores.
+
 1. No perfil **Administrador**, abra **Regras do pregão**, ajuste duração, redução mínima, encerramento do cronômetro e disponibilidade do chat; salve antes de iniciar.
 2. No perfil **Fornecedor**, digite o valor da proposta inicial e clique em **Enviar proposta de teste**.
 3. No perfil **Pregoeiro**, abra a disputa. O botão só fica disponível depois que a proposta for enviada; o cronômetro inicia privado com a duração configurada.
