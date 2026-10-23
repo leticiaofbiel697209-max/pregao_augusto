@@ -298,7 +298,25 @@
             <div class="field"><label for="processDescription">Descrição complementar</label><textarea id="processDescription" name="description" maxlength="1000" placeholder="Descreva o escopo, local de entrega ou informações importantes para os fornecedores."></textarea></div>
           </section>
           <section class="panel top-gap">
-            <h2 class="form-section-title">2. Calendário</h2><p class="form-section-copy">Defina os horários de abertura e fechamento para recebimento e a sessão prevista.</p>
+            <h2 class="form-section-title">2. Itens ou lotes</h2><p class="form-section-copy">Inclua o que será contratado. Você pode cadastrar vários itens ou lotes.</p>
+            <div id="processItems" class="stack"></div><button type="button" class="btn secondary small top-gap" id="addProcessItem">+ Adicionar item ou lote</button>
+          </section>
+          <section class="panel top-gap">
+            <h2 class="form-section-title">3. Documentos exigidos</h2><p class="form-section-copy">Selecione os documentos que deverão compor a habilitação dos fornecedores.</p>
+            <div class="checklist-grid" id="processRequirements">
+              <label class="check-option"><input type="checkbox" value="Ato constitutivo ou contrato social" checked><span>Ato constitutivo ou contrato social</span></label>
+              <label class="check-option"><input type="checkbox" value="Comprovante de inscrição no CNPJ" checked><span>Comprovante de inscrição no CNPJ</span></label>
+              <label class="check-option"><input type="checkbox" value="Regularidade fiscal federal" checked><span>Regularidade fiscal federal</span></label>
+              <label class="check-option"><input type="checkbox" value="Regularidade fiscal estadual e municipal" checked><span>Regularidade fiscal estadual e municipal</span></label>
+              <label class="check-option"><input type="checkbox" value="Regularidade do FGTS" checked><span>Regularidade do FGTS</span></label>
+              <label class="check-option"><input type="checkbox" value="Certidão negativa de débitos trabalhistas (CNDT)" checked><span>Certidão negativa de débitos trabalhistas (CNDT)</span></label>
+              <label class="check-option"><input type="checkbox" value="Proposta comercial" checked><span>Proposta comercial</span></label>
+              <label class="check-option"><input type="checkbox" value="Declarações exigidas no edital"><span>Declarações exigidas no edital</span></label>
+            </div>
+            <div class="field top-gap"><label for="customRequirement">Adicionar outro documento</label><div class="section-grid"><input id="customRequirement" maxlength="120" placeholder="Ex.: Atestado de capacidade técnica"><button type="button" class="btn secondary small" id="addRequirement">Adicionar documento</button></div></div>
+          </section>
+          <section class="panel top-gap">
+            <h2 class="form-section-title">4. Calendário</h2><p class="form-section-copy">Defina os horários de abertura e fechamento para recebimento e a sessão prevista.</p>
             <div class="section-grid">
               <div class="field"><label for="proposalStartsAt">Início do recebimento</label><input id="proposalStartsAt" name="startsAt" type="datetime-local" required></div>
               <div class="field"><label for="proposalEndsAt">Encerramento do recebimento</label><input id="proposalEndsAt" name="endsAt" type="datetime-local" required></div>
